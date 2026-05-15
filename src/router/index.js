@@ -6,14 +6,14 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/', // 기본 주소 (localhost:5173/)
       name: 'home',
-      component: HomeView
+      component: HomeView // 이 주소로 오면 HomeView 컴포넌트를 띄워라!
     },
     {
-      path: '/movies',
+      path: '/movies', // (localhost:5173/movies)
       name: 'movies',
-      component: MoviesView
+      component: MoviesView // 이 주소로 오면 MoviesView 컴포넌트를 띄워라!
     }
   ]
 });
